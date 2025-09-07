@@ -1,25 +1,11 @@
 # Insurance Cross Sell Prediction 🏠🏥
-[![GitHub](https://img.shields.io/badge/GitHub-code-blue?style=flat&logo=github&logoColor=white&color=red)](https://github.com/prsdm/mlops-project) [![Medium](https://img.shields.io/badge/Medium-view_article-green?style=flat&logo=medium&logoColor=white&color=green)](https://medium.com/@prasadmahamulkar/machine-learning-operations-mlops-for-beginners-a5686bfe02b2)
-
-Welcome to the Insurance Cross-Selling Prediction project! The goal of this project is to predict which customers are most likely to purchase additional insurance products using a machine learning model.
-
 
 ## Diagram
 Below is the architecture diagram that illustrates the flow of the project from data ingestion to model deployment:
 ![Image](docs/mlops.jpg)
 
-## Get Started
-To get started with the project, follow the steps below:
 
-#### 1. Clone the Repository
-Clone the project repository from GitHub:
-```bash
-git clone https://github.com/prsdm/ml-project.git
-```
-```bash
-cd ml-project
-```
-#### 2. Set Up the Environment
+#### 1. Set Up the Environment
 Ensure you have Python 3.8+ installed. Create a virtual environment and install the necessary dependencies:
 ```bash
 python -m venv venv
@@ -30,13 +16,13 @@ Alternatively, you can use the Makefile command:
 ```bash
 make setup
 ```
-#### 3. Data Preparation
+#### 2. Data Preparation
 Pull the data from DVC. If this command doesn't work, the train and test data are already present in the data folder:
 ```bash
 dvc pull
 ```
 
-#### 4. Train the Model
+#### 3. Train the Model
 To train the model, run the following command:
 
 ```bash
@@ -49,14 +35,14 @@ make run
 ```
 This script will load the data, preprocess it, train the model, and save the trained model to the models/ directory.
 
-#### 5. FastAPI
+#### 4. FastAPI
 Start the FastAPI application by running:
 
 ```bash
 uvicorn app:app --reload
 ```
 
-#### 6. Docker
+#### 5. Docker
 To build the Docker image and run the container:
 
 ```bash
