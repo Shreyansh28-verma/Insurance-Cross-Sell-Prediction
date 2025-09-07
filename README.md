@@ -72,9 +72,3 @@ Integrate Evidently AI to monitor the model for data drift and performance degra
 ```bash
 run monitor.ipynb file
 ```
-
-## License
-
-Copyright © 2024, [Prasad Mahamulkar](https://github.com/prsdm).
-
-Released under the [Apache-2.0 license](LICENSE).
